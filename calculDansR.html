@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="quizStyle.css">
+    <title>Quizz Calcul dans R</title>
+  </head>
+  <body>
+    <nav>
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#">Matieres</a></li>
+        <li><a href="#">Cours</a></li>
+        <li><a href="#">Exercices</a></li>
+      </ul>
+    </nav>
+<main>
+  <h1>Calculs dans R</h1>
+    <section class="landing">
+        <div id="container">
+
+            <div id="start">Démarer Quiz!</div>
+    
+            <div id="quiz" style="display: none">
+    
+                <div id="question"></div>
+    
+<!--                 <div id="qImg"></div>
+ -->    
+                <div id="choices">
+    
+                    <div class="choice" id="A" onclick="checkAnswer('A')"></div>
+    
+                    <div class="choice" id="B" onclick="checkAnswer('B')"></div>
+    
+                    <div class="choice" id="C" onclick="checkAnswer('C')"></div>
+    
+                </div>
+    
+                <div id="timer">
+    
+                    <div id="counter"></div>
+    
+                    <div id="btimeGauge"></div>
+    
+                    <div id="timeGauge"></div>
+    
+                </div>
+    
+                <div id="progress"></div>
+    
+            </div>
+    
+            <div id="scoreContainer" style="display: none"></div>
+    
+        </div>
+    
+        
+    </section>
+</main>
+
+    <script src="app.js"></script>
+    <script src="quiz.js"></script>
+  </body>
+</html>
